@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+
+   <meta charset=UTF-8>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Tour & Travel</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+<!--preloader starts-->
+<section class="pre-loader">
+    <div class="progress">
+        <span class="text">loading</span>
+        <div class="progress-box">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+</section>
+<!--preloader ends-->
+
+<!--header starts-->
+
+<header class="navigation">
+
+    <nav class="navbar flex">
+        <a href="" class="logo">Travel<span class="dot">.</span></a>
+            <div id="mySidenav">
+                <ul class="flex nav-list">
+                    <li class="dark menu"><a href="#home">home</a></li>
+                    <li class="menu"><a href="#feature">feature</a></li>
+                    <li class="menu"><a href="#about">about</a></li>
+                    <li class="menu"><a href="#gallery">gallery</a></li>
+                    <li class="menu"><a href="#review">review</a></li>
+                    <li class="menu"><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+
+        <div class="toggle" id="menu" onclick="onClickMenu()">
+            <span id="bar-1" class="bar"></span>
+            <span id="bar-2" class="bar"></span>
+            <span id="bar-3" class="bar"></span>
+        </div>
+    </nav>
+
+</header>
+
+<!--header ends-->
+
+<!--home section satrts-->
+
+<section class="home" id="home">
+
+    <div class="video">
+        <video src="videos/video.mp4" loop muted autoplay ></video>
+    </div>  
+    <div class="banner flex">
+        <div class="content">
+            <h1>explore new places,<br> adventure awaits.</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry.Lorem Ipsum is simply dummy text
+            of the printing.Lorem Ipsum is simply dummy text of the
+            printing.</p>
+        </div>
+
+        <div class="form-content">
+            <form action="">
+                <h3>search your destination</h3>
+
+                <span class="fill">location</span>
+                <input type="text" placeholder="place you want to visit">
+
+                <span class="fill">guest memebers</span>
+                <input type="number" placeholder="number of peoples">
+
+                <span class="fill">arrivals</span>
+                <input type="date" placeholder="mm/dd/yyyy">
+
+                <span class="fill">leaving</span>
+                <input type="date" placeholder="mm/dd/yyyy">
+
+                <input type="submit" value="search">
+            </form>
+        </div>
+    </div>    
+
+</section>
+
+<!--home section ends-->
+
+<!--feature section starts-->
+<section class="inner feature" id="feature">
+
+    <h1 class="heading"><span class="seperate">l</span>ocations</h1>
+    <div class="card-container flex">
+        <div class="card">
+              <span class="discount">-35%</span>
+              <img src="images/card1.webp" class="image" alt="">
+              <div class="content">
+                   <h3 class="title">hawaii</h3>
+                   <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry.Lorem Ipsum is simply dummy text
+                    of the printing.</p>
+                    <div class="stars">
+                         <span class="fa fa-star star"></span>
+                         <span class="fa fa-star star"></span>
+                         <span class="fa fa-star star"></span>
+                         <span class="fa fa-star star"></span>
+                         <span class="fa fa-star-half star"></span>
+                    </div>
+                    <a href="" class="btn">check out!</a>
+              </div>
+        </div>
+
+        <div class="card">
+            <img src="images/card2.webp" class="image" alt="">
+            <div class="content">
+                <h3 class="title">egypt</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry.Lorem Ipsum is simply dummy text
+                  of the printing.</p>
+                  <div class="stars">
+                       <span class="fa fa-star star"></span>
+                       <span class="fa fa-star star"></span>
+                       <span class="fa fa-star star"></span>
+                       <span class="fa fa-star star"></span>
+                       <span class="fa fa-star-half star"></span>
+                  </div>
+                  <a href="" class="btn">check out!</a>
+            </div>
+        </div>
+
+        <div class="card card-3">
+            <span class="discount">-15%</span>
+            <img src="images/card3.jpg" class="image" alt="">
+            <div class="content">
+                <h3 class="title">india</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry.Lorem Ipsum is simply dummy text
+                of the printing.</p>
+                <div class="stars">
+                   <span class="fa fa-star star"></span>
+                   <span class="fa fa-star star"></span>
+                   <span class="fa fa-star star"></span>
+                   <span class="fa fa-star star"></span>
+                   <span class="fa fa-star-half star"></span>
+                </div>
+                <a href="" class="btn">check out!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--feature section ends-->
+
+<!--about section starts-->
+
+<section class="inner" id="about">
+    <h1 class="heading"><span class="seperate">a</span>bout <span class="seperate">u</span>s</h1>
+    <div class="about flex">
+         <div class="left">
+            <img src="images/about.jpg">
+         </div>  
+         <div class="right">
+            <h3 class="choose-us">why choose us</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry.Lorem Ipsum is simply dummy text
+                of the printing.<br>Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry.</p>
+            <div class="buttons">
+                <a href="" class="btn">read more</a>
+                <a href="" class="btn">get in touch</a> 
+            </div>  
+        </div>
+    </div>
+</section>
+
+<!--about section ends-->
+
+<!--gallery section starts-->
+<section class="inner" id="gallery">
+    <h1 class="heading"><span class="seperate">g</span>allery</h1>
+    <div class="gallery flex">
+        <div class="image mar-bottom">
+             <img src="images/gimg1.webp">
+             <div class="icons">
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-share"></a>
+                <a href="" class="fa fa-search"></a>
+             </div>
+        </div>
+        <div class="image mar-bottom">
+            <img src="images/gimg2.webp">
+            <div class="icons">
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-share"></a>
+                <a href="" class="fa fa-search"></a>
+             </div>
+        </div>
+        <div class="image mar-bottom">
+             <img src="images/gimg3.webp">
+             <div class="icons">
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-share"></a>
+                <a href="" class="fa fa-search"></a>
+             </div>
+        </div>
+        <div class="image">
+            <img src="images/gimg4.webp">
+            <div class="icons">
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-share"></a>
+                <a href="" class="fa fa-search"></a>
+             </div>
+        </div>
+        <div class="image">
+            <img src="images/gimg5.webp">
+            <div class="icons">
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-share"></a>
+                <a href="" class="fa fa-search"></a>
+             </div>
+        </div>
+        <div class="image">
+            <img src="images/gimg6.webp">
+            <div class="icons">
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-share"></a>
+                <a href="" class="fa fa-search"></a>
+             </div>
+        </div>
+    </div>
+</section>
+<!--gallery section ends-->
+
+<!--review section strats-->
+
+<section class="fixed" id="review">
+    <div class="inner">
+        <h1 class="review-heading"><span class="seperate">r</span>eview</h1>
+        <div class="review-parts flex">
+            <div class="part">
+                <div class="image-part">
+                    <img src="images/rimg1.jpg">
+                </div>    
+                <div class="content">
+                    <h3 class="sub-heading">someone's name</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry.Lorem Ipsum is simply dummy text
+                    of the printing.</p>
+                    <div class="stars">
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part">
+                <div class="image-part">
+                    <img src="images/rimg2.jpg">
+                </div>   
+                <div class="content">
+                    <h3 class="sub-heading">someone's name</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry.Lorem Ipsum is simply dummy text
+                    of the printing.</p>
+                    <div class="stars">
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part part-3">
+                <div class="image-part">
+                    <img src="images/rimg3.jpg">
+                </div>   
+                <div class="content">
+                    <h3 class="sub-heading">someone's name </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry.Lorem Ipsum is simply dummy text
+                    of the printing.</p>
+                    <div class="stars">
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                       <span class="fa fa-star star1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--review section ends-->
+
+<!--contact us starts-->
+
+<section  id="contact">
+       <h1 class="heading"><span class="seperate">c</span>ontact <span class="seperate">u</span>s</h1>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5619071930164!2d77.22732101455915!3d28.612916691720464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1620619819393!5m2!1sen!2sin"
+       width="100%" height="400" style="border:0;" outline="none;" allowfullscreen="" loading="lazy"></iframe>
+
+       <div class="inner flex">
+            <div class="contact-content">
+                <div class="address">
+                    <h3><span class="fa fa-home icon"></span>address</h3>
+                    <p>mumbai,<br>
+                      maharashtra,<br>
+                      india - 400104.
+                </div>
+
+                <div class="email">
+                    <h3><span class="fa fa-envelope icon"></span>email</h3>
+                    <p>abc@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                    <h3><span class="fa fa-phone icon"></span>phone</h3>
+                    <p>+1234567890</p>
+                </div>
+
+            </div>
+
+            <div class="contact-form">
+               <form action="">
+                   <h3 class="form-heading">get in touch</h3>
+                   
+                   <div class="input-box">
+                       <input type="text" placeholder="enter your name">
+                       <input type="email" placeholder="enter you e-mail">
+                   </div>
+
+                   <textarea name="" id="" cols="10" rows="20" placeholder="message"></textarea>
+
+                   <input type="submit" value="message">
+               </form>
+            </div>
+       </div>
+</section>
+<!--contact us ends-->
+
+<!--discount part starts-->
+<section class="discount-offer" id="discount">
+     <div class="discount-content">
+        <h1 class="discount-heading">sign up for 25% discount</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry.Lorem Ipsum is simply dummy text
+            of the printing.Lorem Ipsum is simply dummy text
+            of the printing.</p>
+        <form action="">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="sign up">
+        </form>
+     </div>
+</section>
+<!--discount part ends-->
+
+<!--footer section starts-->
+<section class="footer flex">
+     <div class="copyright">
+        <h3 class="footer-text">Copyright &copy; 2021 <span class="seperate">HarmanPreet Kaur</span></h3>
+     </div>
+     <div class="social-icon">
+         <span class="fa fa-facebook icon facebook"></span>
+         <span class="fa fa-twitter icon"></span>
+         <span class="fa fa-instagram icon"></span>
+         <span class="fa fa-github icon"></span>
+     </div>
+</section>
+<!--footer section ends-->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
